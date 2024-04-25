@@ -15,8 +15,6 @@ function App() {
       })
   }, []);
 
-  console.log(movieData);
-
   const movieElem = movieData && movieData.map(elem => {
     return(
       <MovieCard 
@@ -37,7 +35,5 @@ function App() {
     </main>
   );
 }
-
-
 
 export default App;

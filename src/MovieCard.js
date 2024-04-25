@@ -18,7 +18,6 @@ function MovieCard(props)
       </div>
       <p className='movie-title'>{props.title}</p>
       <p className='movie-date'>{props.date}</p>
-      
     </div>
   )
 }
