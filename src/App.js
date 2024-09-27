@@ -5,8 +5,8 @@ import './App.css'
 function App() {
   const [movieData, setMovieData] = React.useState(null);
   React.useEffect(() => {
-    const apiKey = '80a00ae154cf4596b7bac7d29180daf0';
-    const url = `https://api.themoviedb.org/3/movie/changes?api_key=${apiKey}&page=2`;
+    const apiKey = process.env.REACT_APP_API_KEY;
+    const url = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&page=1`;
     fetch(url)
       .then(response => response.json())
       .then(data => setMovieData(data.results))
