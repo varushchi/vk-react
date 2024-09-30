@@ -4,6 +4,7 @@ import './App.css'
 
 function App() {
   const [movieData, setMovieData] = React.useState(null);
+  const [error, setError] = React.useState(false)
   React.useEffect(() => {
     const apiKey = process.env.REACT_APP_API_KEY;
     const url = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&page=1`;
@@ -12,6 +13,7 @@ function App() {
       .then(data => setMovieData(data.results))
       .catch(error => {
         console.error('Error fetching data:', error)
+        setError(true)
       })
   }, []);
 
@@ -31,6 +33,7 @@ function App() {
 
   return (
     <main>
+      {error && <p className='error'>Error while loading data. Turn on VPN</p>}
       {movieData && movieElem}
     </main>
   );
