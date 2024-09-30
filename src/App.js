@@ -22,7 +22,7 @@ function App() {
       <MovieCard 
         key = {elem.id}
         id = {elem.id}
-        img = {`https://image.tmdb.org/t/p/w500${elem.poster_path}`}
+        img = {`https://image.tmdb.org/t/p/w400${elem.poster_path}`}
         title = {elem.title}
         rating = {elem.vote_average.toFixed(1)}
         date = {elem.release_date.split("-").join('.')}

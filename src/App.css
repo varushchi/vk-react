@@ -23,7 +23,7 @@
 main
 {
   display: grid;
-  grid-template-columns: repeat(3, 500px);
+  grid-template-columns: repeat(3, 400px);
   justify-content: space-around;
   grid-auto-rows: minmax(100px, auto);
   grid-row-gap: 20px;
@@ -72,7 +72,7 @@ main
 {
   main 
   {
-    grid-template-columns: repeat(2, 500px);
+    grid-template-columns: repeat(2, 400px);
   }
 }
 
@@ -80,7 +80,7 @@ main
 {
   main 
   {
-    grid-template-columns: 500px;
+    grid-template-columns: 400px;
   }
 }
 
