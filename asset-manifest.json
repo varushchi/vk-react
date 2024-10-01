@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/vk-react/static/css/main.6e9c1cdb.css",
-    "main.js": "/vk-react/static/js/main.321b49e2.js",
+    "main.js": "/vk-react/static/js/main.1e77355f.js",
     "index.html": "/vk-react/index.html",
     "main.6e9c1cdb.css.map": "/vk-react/static/css/main.6e9c1cdb.css.map",
-    "main.321b49e2.js.map": "/vk-react/static/js/main.321b49e2.js.map"
+    "main.1e77355f.js.map": "/vk-react/static/js/main.1e77355f.js.map"
   },
   "entrypoints": [
     "static/css/main.6e9c1cdb.css",
-    "static/js/main.321b49e2.js"
+    "static/js/main.1e77355f.js"
   ]
 }
